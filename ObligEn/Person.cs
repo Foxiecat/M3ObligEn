@@ -12,22 +12,20 @@ namespace ObligEn
         public int DeathYear;
         public object Father;
         public object Mother;
-        
-        public object GetDescription(int anId, string first, string last, int birth, int death, object father, object mother)
-        {
-            Id = 1;
-            Id = anId;
-            FirstName = first;
-            LastName = last;
-            BirthYear = birth;
-            DeathYear = death;
-            Father = father;
-            Mother = mother;
-        }
 
-        public object GetDescription()
+        public string GetDescription(int anId, string first, string last, int birth, int death, object father,
+            object mother)
         {
-            throw new NotImplementedException();
+            string text = "";
+            //Make it flexible with if statements
+
+            if (Id != 0) text += $"{anId}";
+            if (FirstName != null) text += $"{first}";
+            if (LastName != null) text += $"{last}";
+            if (BirthYear != 0) text += $"{birth}";
+            if (DeathYear != 0) text += $"{death}";
+            if (Father != null) text += $"{father}";
+            if (Mother != null) text += $"{mother}";
         }
     }
 }
