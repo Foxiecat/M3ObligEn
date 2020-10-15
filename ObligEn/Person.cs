@@ -11,8 +11,8 @@ namespace ObligEn
         public string LastName;
         public int BirthYear;
         public int DeathYear;
-        public object Father;
-        public object Mother;
+        public Person Father;
+        public Person Mother;
 
         public string GetDescription()
         {
@@ -24,9 +24,9 @@ namespace ObligEn
             if (BirthYear != 0) text += $" Født: {BirthYear} ";
             if (DeathYear != 0) text += $"Død: {DeathYear} ";
             //Object Father's Name and Id
-            if (Father != null) text += $"Far: {Father} ";
+            if (Father != null) text += $"Far: {Father.FirstName} (Id={Father.Id}) ";
             //Object Mother's Name and Id
-            if (Mother != null) text += $"Mor: {Mother}";
+            if (Mother != null) text += $"Mor: {Mother.FirstName} (Id={Mother.Id})";
 
             return text;
         }
