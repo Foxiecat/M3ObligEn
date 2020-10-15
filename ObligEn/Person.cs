@@ -1,5 +1,6 @@
 using System;
 using System.Data.Common;
+using System.Runtime.InteropServices;
 
 namespace ObligEn
 {
@@ -13,19 +14,21 @@ namespace ObligEn
         public object Father;
         public object Mother;
 
-        public string GetDescription(int anId, string first, string last, int birth, int death, object father,
-            object mother)
+        public string GetDescription()
         {
-            string text = "";
-            //Make it flexible with if statements
+            var text = "";
 
-            if (Id != 0) text += $"{anId}";
-            if (FirstName != null) text += $"{first}";
-            if (LastName != null) text += $"{last}";
-            if (BirthYear != 0) text += $"{birth}";
-            if (DeathYear != 0) text += $"{death}";
-            if (Father != null) text += $"{father}";
-            if (Mother != null) text += $"{mother}";
+            if (FirstName != null) text += $"{FirstName} ";
+            if (LastName != null) text += $"{LastName} ";
+            if (Id != 0) text += $"(Id={Id})";
+            if (BirthYear != 0) text += $" Født: {BirthYear} ";
+            if (DeathYear != 0) text += $"Død: {DeathYear} ";
+            //Object Father's Name and Id
+            if (Father != null) text += $"Far: {Father} ";
+            //Object Mother's Name and Id
+            if (Mother != null) text += $"Mor: {Mother}";
+
+            return text;
         }
     }
 }
