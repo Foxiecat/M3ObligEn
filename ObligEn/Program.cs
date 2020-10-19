@@ -31,7 +31,7 @@ namespace ObligEn
             {
                 Console.Write(FamilyApp.CommandPrompt);
                 var command = Console.ReadLine();
-                var response = FamilyApp.HandleCommand(command);
+                var response = app.HandleCommand(command);
                 Console.WriteLine(response);
             }
         }
