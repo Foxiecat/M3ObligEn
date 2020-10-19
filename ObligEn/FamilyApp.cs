@@ -41,7 +41,7 @@ namespace ObligEn
 
             if (vis == "vis" && id != 0)
             {
-                //For/Foreach Person in _people, if father.Id = Person.Id then display under child
+                //For/Foreach Person in _people, if father.Id = Person.Id then display under child...?
             }
 
             return "uskjent kommand";
