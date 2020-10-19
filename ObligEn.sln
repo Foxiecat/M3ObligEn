@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObligEn", "ObligEn\ObligEn.csproj", "{44A9D165-5029-44FB-85FA-9C3F592342BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObligEnTests", "ObligEnTests\ObligEnTests.csproj", "{1EB4419C-7AD7-47D5-B791-F891C31C803C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{44A9D165-5029-44FB-85FA-9C3F592342BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44A9D165-5029-44FB-85FA-9C3F592342BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44A9D165-5029-44FB-85FA-9C3F592342BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB4419C-7AD7-47D5-B791-F891C31C803C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB4419C-7AD7-47D5-B791-F891C31C803C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB4419C-7AD7-47D5-B791-F891C31C803C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB4419C-7AD7-47D5-B791-F891C31C803C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
