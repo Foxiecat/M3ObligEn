@@ -23,8 +23,8 @@ namespace ObligEn
             if (Id != 0) text += $"(Id={Id})";
             if (BirthYear != 0) text += $" Født: {BirthYear} ";
             if (DeathYear != 0) text += $"Død: {DeathYear} ";
-            if (Father != null) text += $"Far: {Father.FirstName} (Id={Father.Id}) ";
-            if (Mother != null) text += $"Mor: {Mother.FirstName} (Id={Mother.Id})";
+            if (Father != null) text += $"Far: {Father.FirstName} (Id={Father.Id})";
+            if (Mother != null) text += $" Mor: {Mother.FirstName} (Id={Mother.Id})";
 
             return text;
         }

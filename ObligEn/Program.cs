@@ -26,7 +26,7 @@ namespace ObligEn
 
             var app = new FamilyApp(sverreMagnus, ingridAlexandra, haakon,
                 metteMarit, marius, harald, sonja, olav);
-            Console.WriteLine(app.WelcomeMessage);
+            Console.WriteLine(FamilyApp.WelcomeMessage);
             while (true)
             {
                 Console.Write(FamilyApp.CommandPrompt);
